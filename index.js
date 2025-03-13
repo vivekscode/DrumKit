@@ -1,10 +1,10 @@
 for(var i=0;i<7;i++){
     document.querySelectorAll("button")[i].addEventListener("click",function (event){
-        handeClick(this.innerHTML);
+        handleClick(this.innerHTML);
         handlePress(this.innerHTML);
     });
 }
-function handeClick(buttonelement){
+function handleClick(buttonelement){
     
     switch(buttonelement){
         case "w":
@@ -50,6 +50,6 @@ function handlePress(key){
 }
 
 document.addEventListener("keypress",function (event){
-    handeClick(`${event.key}`);
+    handleClick(`${event.key}`);
     handlePress(`${event.key}`);
 })
